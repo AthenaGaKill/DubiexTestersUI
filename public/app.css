@@ -1,0 +1,53 @@
+body{
+    padding-top: 50px;
+    background: rgb(22, 22, 22);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+form{    
+    padding-bottom: 25px;
+    color: rgb(0, 0, 0);   
+    background: rgb(73, 72, 72);
+}
+
+#chosenidform{
+     border: 5px solid rgb(255, 255, 255);
+}
+
+li{
+    list-style-type: none;
+}
+
+#idcolor{
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+a{
+    color: rgb(161, 116, 116);
+    padding-left: 40px;
+    font-size: 200%;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+h1{
+    padding-left: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.namecolor{
+    color: rgb(255, 255, 255);
+}
+
+#chosenid{
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+    
+
+
+
+

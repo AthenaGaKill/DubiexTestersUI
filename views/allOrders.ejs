@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="app.css">
+
+<form id="chosenidform">
+    <h1 id="chosenid">Order of user ID:
+        <%= searchQuery %>
+    </h1>
+    <% for(var i=0;i<orderInfo.length;i++){ %>
+        <!--shows us the item we searched for -->
+        <% if(searchQuery == orderInfo[i].id){  %>
+            <ul>
+                <li> <strong class="namecolor">pairId :</strong> <%= orderInfo[i].pairId %>
+                </li>
+                <li> <strong class="namecolor">maker:</strong> <%= orderInfo[i].maker %>
+                </li>
+                <li> <strong class="namecolor">taker:</strong> <%= orderInfo[i].taker %>
+                </li>
+                <li> <strong class="namecolor">makerValue:</strong> <%= orderInfo[i].makerValue %>
+                </li>
+                <li> <strong class="namecolor">takerValue:</strong><%= orderInfo[i].takerValue %>
+                </li>
+                <li> <strong class="namecolor">makerContractAddress:</strong> <%= orderInfo[i].makerContractAddress %>
+                </li>
+                <li> <strong class="namecolor">takerContractAddress:</strong> <%= orderInfo[i].takerContractAddress %>
+                </li>
+                <li> <strong class="namecolor">makerCurrencyType:</strong> <%= orderInfo[i].makerCurrencyType %>
+                </li>
+                <li> <strong class="namecolor">takerCurrencyType:</strong> <%= orderInfo[i].takerCurrencyType %>
+                </li>
+                <li> <strong class="namecolor">createdAt:</strong> <%= orderInfo[i].createdAt %>
+                </li>
+                <li> <strong class="namecolor">updatedAt:</strong> <%= orderInfo[i].updatedAt %>
+                </li>
+                <li> <strong class="namecolor">patchId:</strong> <%= orderInfo[i].patchId %>
+                </li>
+            </ul>
+        <% } %>
+    <% } %>
+</form>
+
+<center><a href="/">Click here to check another ID</a></center>
+
+<form>
+    <h1>An Overview of All Orders</h1>
+    <% for(var i=0;i<orderInfo.length;i++){ %>
+        <ul>
+            <li>
+                <h3><strong id="idcolor">id: <%= orderInfo[i].id %> </strong></h3>
+            </li>
+            <li> <strong class="namecolor">pairId :</strong> <%= orderInfo[i].pairId %>
+            </li>
+            <li> <strong class="namecolor">maker:</strong> <%= orderInfo[i].maker %>
+            </li>
+            <li> <strong class="namecolor">taker:</strong> <%= orderInfo[i].taker %>
+            </li>
+            <li> <strong class="namecolor">makerValue:</strong> <%= orderInfo[i].makerValue %>
+            </li>
+            <li> <strong class="namecolor">takerValue:</strong><%= orderInfo[i].takerValue %>
+            </li>
+            <li> <strong class="namecolor">makerContractAddress:</strong> <%= orderInfo[i].makerContractAddress %>
+            </li>
+            <li> <strong class="namecolor">takerContractAddress:</strong> <%= orderInfo[i].takerContractAddress %>
+            </li>
+            <li> <strong class="namecolor">makerCurrencyType:</strong> <%= orderInfo[i].makerCurrencyType %>
+            </li>
+            <li> <strong class="namecolor">takerCurrencyType:</strong> <%= orderInfo[i].takerCurrencyType %>
+            </li>
+            <li> <strong class="namecolor">createdAt:</strong> <%= orderInfo[i].createdAt %>
+            </li>
+            <li> <strong class="namecolor">updatedAt:</strong> <%= orderInfo[i].updatedAt %>
+            </li>
+            <li> <strong class="namecolor">patchId:</strong> <%= orderInfo[i].patchId %>
+            </li>
+            <li>====================================================================================================================</li>
+        </ul>
+    <% } %>
+</form>

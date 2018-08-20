@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="app.css">
+
+<form id="chosenidform">
+    <h1 id="chosenid">Market info of user ID:
+        <%= searchQuery %>
+    </h1>
+    <% for(var i=0;i<marketsInfo.length;i++){ %>
+        <!--shows us the item we searched for -->
+        <% if(searchQuery == marketsInfo[i].id){  %>
+            <ul>
+                <li> <strong class="namecolor">ID :</strong> <%= marketsInfo[i].id %>
+                </li>
+                <li> <strong class="namecolor">contractAddressA :</strong> <%= marketsInfo[i].contractAddressA %>
+                </li>
+                <li> <strong class="namecolor">contractAddressB:</strong> <%= marketsInfo[i].contractAddressB %>
+                </li>
+                <li> <strong class="namecolor">currencyTypeA:</strong> <%= marketsInfo[i].currencyTypeA %>
+                </li>
+                <li> <strong class="namecolor">currencyTypeB:</strong> <%= marketsInfo[i].currencyTypeB %>
+                </li>
+                <li> <strong class="namecolor">volumeA:</strong><%= marketsInfo[i].volumeA %>
+                </li>
+                <li> <strong class="namecolor">volumeB:</strong> <%= marketsInfo[i].volumeB %>
+                </li>
+                <li> <strong class="namecolor">lastPrice:</strong> <%= marketsInfo[i].lastPrice %>
+                </li>
+                <li> <strong class="namecolor">createdAt:</strong> <%= marketsInfo[i].createdAt %>
+                </li>
+                <li> <strong class="namecolor">updatedAt:</strong> <%= marketsInfo[i].updatedAt %>
+                </li>
+                <li> <strong class="namecolor">patchId:</strong> <%= marketsInfo[i].patchId %>
+                </li>
+            </ul>                
+        <% } %>
+    <% } %>
+</form>
+
+<center><a href="/">Click here to check another ID</a></center>
+
+<form id="chosenidform">
+    <h1 id="chosenid">All Market Objects:</h1>
+    <% for(var i=0;i<marketsInfo.length;i++){ %>      
+            <ul>
+                <li><h3><strong id="idcolor">ID : <%= marketsInfo[i].id %></strong></h3> 
+                </li>
+                <li> <strong class="namecolor">contractAddressA :</strong> <%= marketsInfo[i].contractAddressA %>
+                </li>
+                <li> <strong class="namecolor">contractAddressB:</strong> <%= marketsInfo[i].contractAddressB %>
+                </li>
+                <li> <strong class="namecolor">currencyTypeA:</strong> <%= marketsInfo[i].currencyTypeA %>
+                </li>
+                <li> <strong class="namecolor">currencyTypeB:</strong> <%= marketsInfo[i].currencyTypeB %>
+                </li>
+                <li> <strong class="namecolor">volumeA:</strong><%= marketsInfo[i].volumeA %>
+                </li>
+                <li> <strong class="namecolor">volumeB:</strong> <%= marketsInfo[i].volumeB %>
+                </li>
+                <li> <strong class="namecolor">lastPrice:</strong> <%= marketsInfo[i].lastPrice %>
+                </li>
+                <li> <strong class="namecolor">createdAt:</strong> <%= marketsInfo[i].createdAt %>
+                </li>
+                <li> <strong class="namecolor">updatedAt:</strong> <%= marketsInfo[i].updatedAt %>
+                </li>
+                <li> <strong class="namecolor">patchId:</strong> <%= marketsInfo[i].patchId %>
+                </li>
+                <li>====================================================================================================</li>
+            </ul>
+    <% } %>                
+</form>
